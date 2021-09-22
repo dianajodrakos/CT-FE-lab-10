@@ -3,8 +3,8 @@ import { useParams } from 'react-router-dom';
 
 export const useRecord = (initialColor = '#FF0000') => {
   const [current, useCurrent] = useState(initialColor);
-  const [record, useRecord] = useState();
 
+  const record = (value) => {};
   const undo = () => {};
   const redo = () => {};
 

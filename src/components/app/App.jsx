@@ -12,7 +12,7 @@ function App() {
       <input type="color" value={current} onChange={({ target }) => record(target.value)} />
       <div style={{ backgroundColor: current, width: '10rem', height: '10rem' }}></div>
     </>
-  )
+  );
 }
 
 export default App;
