@@ -13,19 +13,19 @@ describe('App', () => {
     const colorPicker = screen.getByRole('color-picker');
     fireEvent.change(colorPicker, '#00FF00');
     waitFor(() => {
-      expect(colorPicker).toHaveStyle({ 'background-color': '#00ff00' });
+      expect(display).toHaveStyle({ 'background-color': '#00ff00' });
     });
 
     const undoButton = screen.getByText('undo');
     fireEvent.click(undoButton);
     waitFor(() => {
-      expect(undoButton).toHaveStyle({ 'background-color': '#ff0000' });
+      expect(display).toHaveStyle({ 'background-color': '#ff0000' });
     });
 
     const redoButton = screen.getByText('redo');
     fireEvent.click(redoButton);
     waitFor(() => {
-      expect(redoButton).toHaveStyle({ 'background-color': '#00ff00' });
+      expect(display).toHaveStyle({ 'background-color': '#00ff00' });
     });
 
   });
