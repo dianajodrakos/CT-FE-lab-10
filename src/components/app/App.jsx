@@ -1,6 +1,6 @@
 /* eslint-disable max-len */
 import React from 'react';
-import { useRecord } from '../../hooks/useRecord';
+import { useRecord } from '../../hooks/useRecord.js';
 
 function App() {
   const { current, undo, redo, record } = useRecord('#FF0000');
